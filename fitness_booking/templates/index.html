@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head><title>Fitness Booking</title></head>
+<body>
+  <h1>Book a Class</h1>
+  <form action="/book" method="post">
+    <label>Class ID: <input type="number" name="class_id" required></label><br>
+    <label>Name: <input type="text" name="client_name" required></label><br>
+    <label>Email: <input type="email" name="client_email" required></label><br>
+    <button type="submit">Book</button>
+  </form>
+  <h2>Check Bookings</h2>
+  <form action="/bookings" method="get">
+    <label>Email: <input type="email" name="email" required></label>
+    <button type="submit">View</button>
+  </form>
+</body>
+</html>

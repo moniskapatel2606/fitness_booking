@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head><title>Bookings</title></head>
+<body>
+  <h1>Your Bookings</h1>
+  {% if bookings %}
+    <ul>
+      {% for b in bookings %}
+        <li>{{ b.name }} | {{ b.datetime }} | Instructor: {{ b.instructor }}</li>
+      {% endfor %}
+    </ul>
+  {% else %}
+    <p>No bookings found.</p>
+  {% endif %}
+</body>
+</html>
